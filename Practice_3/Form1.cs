@@ -36,5 +36,12 @@ namespace Practice_3
             else 
                 result_task2.Text = product.ToString();
         }
+
+        private void роботаЗФайламиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 fileForm = new Form2();
+            fileForm.Show();
+            this.Hide();
+        }
     }
 }

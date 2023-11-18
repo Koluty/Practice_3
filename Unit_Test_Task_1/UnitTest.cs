@@ -76,4 +76,60 @@ namespace Unit_Test
             Assert.AreEqual(1, task.CalculateProductInRange());
         }
     }
+    [TestClass]
+    public class FileReadTests
+    {
+        [TestMethod]
+        public void ShouldReadEmptyFile()
+        {
+            string patch = @"C:\Users\Kotov\Desktop\empty.txt";
+            ArraysAverage a = new ArraysAverage(100);
+
+            FileRead fileReadTests = new FileRead();
+            fileReadTests.read(patch, a);
+            Assert.AreEqual(0, a.Length);
+        }
+        [TestMethod]
+        public void ShouldReadFileWithValidData()
+        {
+            string patch = @"C:\Users\Kotov\Desktop\valid.txt";
+            ArraysAverage a = new ArraysAverage(100);
+
+            FileRead fileReadTests = new FileRead();
+            fileReadTests.read(patch, a);
+
+            Assert.AreEqual(5, a.Length);
+            Assert.AreEqual(0, a.a[0]);
+            Assert.AreEqual(1, a.a[1]);
+            Assert.AreEqual(2, a.a[2]);
+            Assert.AreEqual(3, a.a[3]);
+            Assert.AreEqual(4, a.a[4]);
+        }
+    }
+    [TestClass]
+    public class ArraysAverageTests
+    {
+        [TestMethod]
+        public void ArrayOfPositiveIntegers()
+        {
+            int[] array = new int[] { 1, 2, 3, 4, 5 };
+            ArraysAverage average = new ArraysAverage(array.Length);
+            average.a = array;
+            average.Length = array.Length;
+
+            double result = average.Calculate();
+            Assert.AreEqual(3, result);
+        }
+        [TestMethod]
+        public void ArrayOfNegativeIntegers()
+        {
+            int[] array = new int[] { -1, -2, -3, -4, -5 };
+            ArraysAverage average = new ArraysAverage(array.Length);
+            average.a = array;
+            average.Length = array.Length;
+
+            double result = average.Calculate();
+            Assert.AreEqual(-3, result);
+        }
+    }
 }
