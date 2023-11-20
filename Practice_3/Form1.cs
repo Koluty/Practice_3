@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Practice_3.prct_5;
 
 namespace Practice_3
 {
@@ -41,6 +42,13 @@ namespace Practice_3
         {
             Form2 fileForm = new Form2();
             fileForm.Show();
+            this.Hide();
+        }
+
+        private void стандартніІнтерфейсиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 interfaceForm = new Form3();
+            interfaceForm.Show();
             this.Hide();
         }
     }

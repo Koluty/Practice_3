@@ -45,6 +45,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.роботаЗФайламиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.стандартніІнтерфейсиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -196,7 +197,8 @@
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.роботаЗФайламиToolStripMenuItem});
+            this.роботаЗФайламиToolStripMenuItem,
+            this.стандартніІнтерфейсиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(782, 28);
@@ -209,6 +211,13 @@
             this.роботаЗФайламиToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
             this.роботаЗФайламиToolStripMenuItem.Text = "Робота з файлами";
             this.роботаЗФайламиToolStripMenuItem.Click += new System.EventHandler(this.роботаЗФайламиToolStripMenuItem_Click);
+            // 
+            // стандартніІнтерфейсиToolStripMenuItem
+            // 
+            this.стандартніІнтерфейсиToolStripMenuItem.Name = "стандартніІнтерфейсиToolStripMenuItem";
+            this.стандартніІнтерфейсиToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.стандартніІнтерфейсиToolStripMenuItem.Text = "Стандартні інтерфейси";
+            this.стандартніІнтерфейсиToolStripMenuItem.Click += new System.EventHandler(this.стандартніІнтерфейсиToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -263,6 +272,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem роботаЗФайламиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem стандартніІнтерфейсиToolStripMenuItem;
     }
 }
 
